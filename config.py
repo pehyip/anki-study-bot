@@ -1,0 +1,14 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
+TARGET_CHANNEL_ID = int(os.getenv("TARGET_CHANNEL_ID", "1512840513559068751"))
+PING_ROLE_ID = int(os.getenv("PING_ROLE_ID", "1547475658849001552"))
+MOD_ROLE_ID = 1530509533888380939
+
+DECKS_DIRECTORY = "./anki_decks"
+DATABASE_FILE = "./data/user_progress.sqlite3"
+MAX_STUDY_SESSIONS_PER_HOUR = 5
+MAX_STUDY_WORDS_PER_HOUR = 100
